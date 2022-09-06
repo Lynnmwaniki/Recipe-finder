@@ -39,3 +39,14 @@ function getMealList(){
         mealList.innerHTML = html;
     });
 }
+
+//getting the recipes of the meals
+function getMealRecipe(e){
+    e.preventDefault();
+    if(e.target.classList.contains('recipe-btn')){
+    let mealItem = e.target.parentElement.parentElement;
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+    .then(resp => resp.json())
+    .then(data => mealRecipeModal(data.meals));
+}
+}
