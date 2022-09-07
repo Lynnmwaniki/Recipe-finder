@@ -10,6 +10,7 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+
 //get the list of meals that match with the ingredients
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();

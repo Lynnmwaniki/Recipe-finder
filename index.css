@@ -286,6 +286,7 @@ body{
         margin-right: auto;
     }
 }
+
 @media screen and (min-width: 768px){
     #meal{
         display: grid;
