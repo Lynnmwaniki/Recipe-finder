@@ -72,3 +72,12 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+//sending message function
+$('form#contactForm').submit(function (event) {
+    event.preventDefault();
+    const name = $('#name').val();
+    const pass = $('#email').val();
+    const mess = $('#mess').val();
+    alert("Hello " + name + "....Thank you we have received your message and we will respond to you as soon as possible. Thank you for contacting us.");
+});
