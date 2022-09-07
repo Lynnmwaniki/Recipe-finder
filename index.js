@@ -42,7 +42,6 @@ function getMealList(){
     });
 }
 
-
 //getting the recipes of the meals
 function getMealRecipe(e){
     e.preventDefault();
