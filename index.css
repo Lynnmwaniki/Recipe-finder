@@ -278,15 +278,16 @@ body{
     font-weight: 600;
     width: 100%;
 }
+
 /*media queries*/
-@media screen and(min-width: 600px){
+@media screen and (min-width: 600px){
     .meal-search-box{
         width: 540px;
         margin-left: auto;
         margin-right: auto;
     }
 }
-@media screen and(min-width: 768px){
+@media screen and (min-width: 768px){
     #meal{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -299,11 +300,12 @@ body{
         width: 700px;
     }
 }
-@media screen and(min-width: 992px){
+@media screen and (min-width: 992px){
     #meal{
         grid-template-columns: repeat(3, 1fr);
     }
     
 }
+
 
 
